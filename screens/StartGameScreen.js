@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text, TextInput, Button} from 'react-native';
 import Card from '../components/Card';
+import Colors from '../constants/colors';
 
 
 const StartGameScreen = props => {
@@ -14,10 +15,10 @@ const StartGameScreen = props => {
           {/* If you want to add styles to buttons (such as width),
           wrap them in views */}
           <View style={styles.button}>
-            <Button  title="Reset" color="#c717fc"/>
+            <Button  title="Reset" color={Colors.secondary}/>
           </View> 
           <View style={styles.button}>
-            <Button title="Confirm" color="#f7287b"/>
+            <Button title="Confirm" color={Colors.primary}/>
           </View> 
         </View>
       </Card>
